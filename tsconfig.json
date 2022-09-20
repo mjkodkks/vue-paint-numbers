@@ -17,6 +17,6 @@
     "declarationDir": "./types",
     "emitDeclarationOnly": true,
   },
-  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
+  "include": ["lib/**/*.ts", "lib/**/*.d.ts"],
   "references": [{ "path": "./tsconfig.node.json" }],
 }

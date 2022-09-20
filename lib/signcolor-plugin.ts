@@ -1,5 +1,5 @@
 import { App, Plugin } from 'vue';
-import { ISignColorOption } from './types/option';
+import { ISignColorOption } from '.';
 
 // The Install function used by Vue to register the plugin
 export default {

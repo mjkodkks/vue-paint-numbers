@@ -1,3 +1,4 @@
+declare module 'signcolorjs';
 export { default as SignColor } from './signcolor-plugin';
 export interface ISignColorOption {
     p?: string;

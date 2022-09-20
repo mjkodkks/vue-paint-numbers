@@ -14,10 +14,11 @@
       "require": "./dist/signcolor.umd.cjs"
     }
   },
-  "types": "./dist/types/index.d.ts",
+  "types": "./dist/index.d.ts",
   "scripts": {
     "dev": "vite",
     "build": "vite build && vue-tsc",
+    "build-full": "npm run build && npm run pack && npm install signcolorjs-1.0.0.tgz",
     "preview": "vite preview"
   },
   "dependencies": {

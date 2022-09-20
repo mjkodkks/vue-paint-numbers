@@ -7,7 +7,7 @@ import dts from 'vite-plugin-dts'
 export default defineConfig({
   build: {
     lib: {
-      entry: resolve(__dirname, '/src/index.ts'),
+      entry: resolve(__dirname, '/lib/index.ts'),
       name: 'signcolor',
       // the proper extensions will be added
       fileName: 'signcolor'
