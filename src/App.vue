@@ -15,6 +15,7 @@ import { ref } from 'vue';
     <div v-sign>123</div>
     <div v-sign>-123</div>
     <div v-sign>0</div>
+    <div v-sign>11</div>
     <div v-sign>{{numb}}</div>
     <button @click="randomNumber">
     Try Random Number</button>
