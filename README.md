@@ -34,14 +34,14 @@ import { createApp } from 'vue'
 import App from './App.vue'
 
 import { VuePaintNumbers } from 'vue-paint-numbers'
-const signOption = {
+const option = {
     positiveColor: '#7cff66',
     negativeColor: '#ff6680',
     defaultColor: '#000000'
 } 
 
 createApp(App)
-.use(VuePaintNumbers, signOption)
+.use(VuePaintNumbers, option)
 .mount('#app')
 ```
 

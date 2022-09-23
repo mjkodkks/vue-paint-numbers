@@ -4,10 +4,10 @@ import App from './App.vue'
 // for demo only
 // import { VuePaintNumbers } from 'vue-paint-numbers'
 import { IVPNOption, VuePaintNumbers } from '../lib'
-const signOption: IVPNOption = {
+const option: IVPNOption = {
     positiveColor: 'blue'
 } 
 
 createApp(App)
-.use(VuePaintNumbers, signOption)
+.use(VuePaintNumbers, option)
 .mount('#app')
