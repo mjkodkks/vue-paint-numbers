@@ -1,6 +1,6 @@
-export { default as SignColor } from './signcolor-plugin';
+export { default as VuePaintNumbers } from './vue-paint-numbers-plugin';
 
-export interface ISignColorOption {
+export interface IVPNOption {
     positiveColor?: string
     negativeColor?: string
     defaultColor?: string

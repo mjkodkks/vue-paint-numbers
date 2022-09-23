@@ -1,8 +1,8 @@
 import { App, Plugin } from 'vue';
-import { ISignColorOption } from '.';
+import { IVPNOption } from '.';
 
 // default option
-const defaultOptions: ISignColorOption = {
+const defaultOptions: IVPNOption = {
     positiveColor: 'green',
     negativeColor: 'red',
     defaultColor: ''
@@ -10,7 +10,7 @@ const defaultOptions: ISignColorOption = {
 
 // The Install function used by Vue to register the plugin
 export default {
-    install(app: App, options: ISignColorOption = {}) {
+    install(app: App, options: IVPNOption = {}) {
         app.directive('sign', (el, binding) => {
             // this will be called for both `mounted` and `updated`
             // el.style.color = binding.value

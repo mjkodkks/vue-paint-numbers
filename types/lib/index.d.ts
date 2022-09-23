@@ -1,6 +1,6 @@
-declare module 'signcolorjs';
-export { default as SignColor } from './signcolor-plugin';
-export interface ISignColorOption {
+declare module 'vue-paint-numbers';
+export { default as VuePaintNumbers } from './vue-paint-numbers-plugin';
+export interface IVPNOption {
     p?: string;
     n?: string;
 }
