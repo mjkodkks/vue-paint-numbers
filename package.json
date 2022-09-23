@@ -1,24 +1,24 @@
 {
-  "name": "signcolorjs",
+  "name": "vue-paint-numbers",
   "private": false,
-  "version": "1.1.0",
+  "version": "1.0.0",
   "type": "module",
   "files": [
     "dist"
   ],
-  "main": "./dist/signcolor.umd.cjs",
-  "module": "./dist/signcolor.js",
+  "main": "./dist/vue-paint-numbers.umd.cjs",
+  "module": "./dist/vue-paint-numbers.js",
   "exports": {
     ".": {
-      "import": "./dist/signcolor.js",
-      "require": "./dist/signcolor.umd.cjs"
+      "import": "./dist/vue-paint-numbers.js",
+      "require": "./dist/vue-paint-numbers.umd.cjs"
     }
   },
   "types": "./dist/index.d.ts",
   "scripts": {
     "dev": "vite",
     "build": "vite build && vue-tsc",
-    "build-full": "npm run build && npm run pack && npm install signcolorjs-1.0.0.tgz",
+    "build-full": "npm run build && npm run pack && npm install vue-paint-numbers-1.0.0.tgz",
     "preview": "vite preview"
   },
   "dependencies": {

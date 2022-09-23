@@ -8,9 +8,9 @@ export default defineConfig({
   build: {
     lib: {
       entry: resolve(__dirname, '/lib/index.ts'),
-      name: 'signcolor',
+      name: 'vue-paint-numbers',
       // the proper extensions will be added
-      fileName: 'signcolor'
+      fileName: 'vue-paint-numbers'
     },
     rollupOptions: {
       // make sure to externalize deps that shouldn't be bundled

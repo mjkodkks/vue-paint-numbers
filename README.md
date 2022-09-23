@@ -1,16 +1,16 @@
-# SignColor 🟩
+# Vue-Paint-Numbers 🟩
 
-SignColor is a simple vue directive for paint text color if number is positive or negative by lookup inside inner html element :)
+Vue-Paint-Numbers is a simple vue directive for paint text color if number is positive or negative by lookup inside inner html element :)
 
 
 ## install
 1. install package
 ```sh
-npm install signcolor
+npm install vue-paint-numbers
 
 or
 
-yarn install signcolor
+yarn install vue-paint-numbers
 ```
 
 2. add lib as plugin to vue `main.vue`
@@ -20,10 +20,10 @@ vue 3
 import { createApp } from 'vue'
 import App from './App.vue'
 
-import { SignColor } from 'signcolorjs'
+import { VuePaintNumbers } from 'vue-paint-numbers'
 
 createApp(App)
-.use(SignColor)
+.use(VuePaintNumbers)
 .mount('#app')
 ```
 3. done
@@ -33,15 +33,15 @@ or you need to use your own custom color
 import { createApp } from 'vue'
 import App from './App.vue'
 
-import { SignColor } from 'signcolorjs'
-const signOption = {
+import { VuePaintNumbers } from 'vue-paint-numbers'
+const option = {
     positiveColor: '#7cff66',
     negativeColor: '#ff6680',
     defaultColor: '#000000'
 } 
 
 createApp(App)
-.use(SignColor, signOption)
+.use(VuePaintNumbers, option)
 .mount('#app')
 ```
 
