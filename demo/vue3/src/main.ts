@@ -1,6 +1,6 @@
-import { createApp } from 'vue'
-import App from './App.vue'
+import { createApp } from "vue";
+import App from "./App.vue";
+import "./assets/main.css";
+import { VuePaintNumbers } from "vue-paint-numbers";
 
-import './assets/main.css'
-
-createApp(App).mount('#app')
+createApp(App).use(VuePaintNumbers).mount("#app");

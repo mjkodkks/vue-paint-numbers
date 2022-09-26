@@ -2,6 +2,8 @@
 
 Vue-Paint-Numbers is a simple vue directive for paint text color if number is positive or negative by lookup inside inner html element :)
 
+## Live Playground 
+- [vue3](https://codesandbox.io/s/v-paint-numbers-demo-vue3-7jiujs)
 
 ## install
 1. install package
@@ -28,7 +30,7 @@ createApp(App)
 ```
 3. done
 
-or you need to use your own custom color
+or you need to use your own custom color for global
 ```js
 import { createApp } from 'vue'
 import App from './App.vue'
@@ -68,6 +70,16 @@ with inline overide
   </div>
 </template>
 ```
+
+with inline overide some value 
+```vue
+<template>
+  <div>
+    <div v-paint="{positiveColor: 'blue'}">123</div>
+  </div>
+</template>
+```
+
 
 built with typescript
 
