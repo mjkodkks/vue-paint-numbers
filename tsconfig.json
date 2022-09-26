@@ -18,5 +18,6 @@
     "emitDeclarationOnly": true,
   },
   "include": ["lib/**/*.ts", "lib/**/*.d.ts"],
+  "exclude": ["demo/**/*.ts", "demo/**/*.d.ts"],
   "references": [{ "path": "./tsconfig.node.json" }],
 }

@@ -54,8 +54,17 @@ coming soon...
 ```vue
 <template>
   <div>
-    <div v-sign>123</div>
-    <div v-sign>-123</div>
+    <div v-paint>123</div>
+    <div v-paint>-123</div>
+  </div>
+</template>
+```
+
+with inline overide
+```vue
+<template>
+  <div>
+    <div v-paint="{positiveColor: 'yellow', negativeColor: 'orange'}">123</div>
   </div>
 </template>
 ```
