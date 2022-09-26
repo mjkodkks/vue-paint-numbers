@@ -11,13 +11,13 @@ const defaultOptions: IVPNOption = {
 // The Install function used by Vue to register the plugin
 export default {
     install(app: App, options: IVPNOption = {}) {
-        app.directive('sign', (el, binding) => {
+        app.directive('paint', (el, binding) => {
             // this will be called for both `mounted` and `updated`
-            // el.style.color = binding.value
-            // console.dir(el)
-            const { positiveColor, negativeColor, defaultColor } = { ...defaultOptions, ...options }
-            // console.log(positiveColor)
-
+            let inheritOptoin: IVPNOption = {}
+            if (binding.value) {
+                inheritOptoin = { ...inheritOptoin, ...binding.value }
+            }
+            const { positiveColor, negativeColor, defaultColor } = { ...defaultOptions, ...options, ...inheritOptoin }
             const num = +el.innerText
             let color: string | undefined
             if (num > 0) {
